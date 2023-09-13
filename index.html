@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="papertitle_website">papertitle_website</title>
+        <meta name="author" content="Malte Mosbach">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+    </head>
+
+    <body>
+        <div class="title">
+            <br><br>
+            <h2 id="papertitle_heading" style=line-height:125%>papertitle_heading</h2>
+            <div class="authors">
+                <a href="https://maltemosbach.github.io/"><b>Malte Mosbach</b></a><sup>1</sup>, and 
+                <a href="https://www.ais.uni-bonn.de/behnke/"><b>Sven Behnke</b></a><sup>1</sup>
+            </div>
+            <div class="affiliations">
+            <sup>1</sup>University of Bonn
+            </div>
+            <div class="title_links">
+                <span class="tag">
+                <a href="assets/bibtex.txt" class="link">[bibtex]</a>&nbsp;
+                <a href="" class="link">[paper]</a>&nbsp;
+                </span>
+            </div>
+            <br>
+        </div>
+        
+        
+
+        <div class="abstract">
+            <b>Abstract: </b> Interactive grasping from clutter, akin to human dexterity, is one of the longest-standing problems in robot learning. 
+Challenges stem from the intricacies of visual perception, the demand of precise motor skills, and the complex interplay between the two.
+In this work, we present Teacher-Augmented Policy Gradient (TAPG), a novel two-stage learning framework that synergizes reinforcement learning (RL) and policy distillation.
+After training a privileged teacher policy to master the motor control, TAPG facilitates guided, yet adaptive, learning of a sensorimotor policy, enabling it to navigate the intricacies of new observation space.
+We demostrate this ability by integrating TAPG with a promptable segmentation model.
+Our trained policies adeptly grasp a wide variety of objects from cluttered scenarios in simulation and the real-world based on human-understandble prompts.
+Furthermore, we show robust zero-shot transfer to novel objects. 
+            <br><br>
+        </div>
+
+
+        <h3>Demo</h3>
+
+        <div align="center">
+            <table class="center">
+                <tr style=font-size:15pt>
+                    <td style='text-align:center; vertical-align:middle' colspan="1">Original</td>
+                    <td style='text-align:center; vertical-align:middle' colspan="1">Tracked Segmentation</td>
+                </tr>
+                <tr>
+                    <td>
+                        <video width="310" autoplay loop muted type="loop">
+                            <source src="assets/videos/clutter_example/no_mask.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video width="310" autoplay loop muted type="loop">
+                            <source src="assets/videos/clutter_example/mask.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <br>
+
+        <!--Footer.-->
+        <br><br><br>
+        <p style="text-align:left;">
+            <a href="https://www.uni-bonn.de/en/imprint" class="link">Imprint</a>&nbsp;
+            <a href="https://www.uni-bonn.de/en/data-protection-policy" class="link">Data Protection Policy</a>&nbsp;
+            <span style="float:right;">
+                <a href="https://github.com/maltemosbach"><img src=assets/images/github-mark.svg height=24 style="position: relative; top: 4px;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://scholar.google.de/citations?user=OQv4g3kAAAAJ&hl=de&oi=ao"><img src=https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg height=24 style="position: relative; top: 4px;"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://de.linkedin.com/in/mosbach"><img src=assets/images/linkedin-mark.png height=24 style="position: relative; top: 4px;"></a>
+            </span>
+        </p>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>
