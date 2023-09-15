@@ -20,8 +20,6 @@
             </div>
             <div class="title_links">
                 <span class="tag">
-                <a href="assets/bibtex.txt" class="link">[bibtex]</a>&nbsp;
-                <a href="" class="link">[paper]</a>&nbsp;
                 </span>
             </div>
             <br>
@@ -41,23 +39,36 @@ Furthermore, we show robust zero-shot transfer to novel objects.
         </div>
 
 
-        <h3>Demo</h3>
+        <div align="center">
+            <video width="800" autoplay loop muted type="loop">
+                <source src="assets/videos/teaser.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br>
+
+
+        <h3>Teacher policy on unseen objects</h3>
+        The privileged teacher policy is trained from simulator-state information about the objects, specifically their oriented bounding boxes.
+        While this leads to efficient learning of the task, the policy does not account for the perception pipeline used during deployment.
 
         <div align="center">
             <table class="center">
-                <tr style=font-size:15pt>
-                    <td style='text-align:center; vertical-align:middle' colspan="1">Original</td>
-                    <td style='text-align:center; vertical-align:middle' colspan="1">Tracked Segmentation</td>
-                </tr>
                 <tr>
                     <td>
-                        <video width="310" autoplay loop muted type="loop">
-                            <source src="assets/videos/clutter_example/no_mask.mp4" type="video/mp4">
+                        <video width="358" autoplay loop muted type="loop">
+                            <source src="assets/videos/teacher/ycb_test/cup.mp4" type="video/mp4">
                         </video>
                     </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td>
-                        <video width="310" autoplay loop muted type="loop">
-                            <source src="assets/videos/clutter_example/mask.mp4" type="video/mp4">
+                        <video width="358" autoplay loop muted type="loop">
+                            <source src="assets/videos/teacher/ycb_test/mug.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <video width="358" autoplay loop muted type="loop">
+                            <source src="assets/videos/teacher/ycb_test/bleach.mp4" type="video/mp4">
                         </video>
                     </td>
                 </tr>
@@ -66,7 +77,8 @@ Furthermore, we show robust zero-shot transfer to novel objects.
         </div>
         <br>
 
-        <h3>Real-world deployment on unseen onjects</h3>
+        <h3>Real-world deployment of TAPG policy on unseen objects</h3>
+        TAPG adapts the behaviors of the teacher to improve the visibility of the object, leading to a real-world deployable policy.
 
         <div align="center">
             <table class="center">
@@ -118,6 +130,32 @@ Furthermore, we show robust zero-shot transfer to novel objects.
             <br>
         </div>
         <br>
+
+        <h3>Grasping from clutter</h3>
+
+        <div align="center">
+            <table class="center">
+                <tr style=font-size:15pt>
+                    <td style='text-align:center; vertical-align:middle' colspan="1">Original</td>
+                    <td style='text-align:center; vertical-align:middle' colspan="1">Tracked Segmentation</td>
+                </tr>
+                <tr>
+                    <td>
+                        <video width="310" autoplay loop muted type="loop">
+                            <source src="assets/videos/clutter_example/no_mask.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <video width="310" autoplay loop muted type="loop">
+                            <source src="assets/videos/clutter_example/mask.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <br>
+
         <!--Footer.-->
         <br><br><br>
         <p style="text-align:left;">
