@@ -1,0 +1,7 @@
+@inproceedings{mosbach2024grasp,
+  author={Mosbach, Malte and Behnke, Sven},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Grasp Anything: Combining Teacher-Augmented Policy Gradient Learning with Instance Segmentation to Grasp Arbitrary Objects}, 
+  year={2024},
+  organization={IEEE}
+  }
